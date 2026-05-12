@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>The Campus Library | 24/7 Library in Burari, Delhi</title>
+    <meta name="title" content="The Campus Library | 24/7 Library in Burari, Delhi">
+    <meta name="description" content="A sanctuary for antiquarian literature and modern scholarship. Open 24 hours with modern amenities, peaceful environment, and high-speed WiFi. Located in Sant Nagar, Burari, Delhi.">
+    <meta name="keywords" content="library, antiquarian books, 24 hour library, Burari Delhi, study space, reading room, scholarship, literature">
+    <meta name="author" content="The Campus Library">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://campuslibrary.in/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://campuslibrary.in/">
+    <meta property="og:title" content="The Campus Library | 24/7 Library in Burari, Delhi">
+    <meta property="og:description" content="A sanctuary for antiquarian literature and modern scholarship. Open 24 hours with modern amenities. Rated 4.9★ on Google.">
+    <meta property="og:image" content="https://campuslibrary.in/og-image.jpg">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="The Campus Library">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://campuslibrary.in/">
+    <meta name="twitter:title" content="The Campus Library | 24/7 Library in Burari, Delhi">
+    <meta name="twitter:description" content="A sanctuary for antiquarian literature and modern scholarship. Open 24 hours with modern amenities. Rated 4.9★ on Google.">
+    <meta name="twitter:image" content="https://campuslibrary.in/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#6B2D3D">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Campus Library">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-DL">
+    <meta name="geo.placename" content="The Campus Library, Sant Nagar, Burari, Delhi">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6B2D3D;
+            --secondary: #C9A227;
+            --accent: #8B9A6D;
+            --bg: #F5F0E6;
+            --text: #3D2B1F;
+            --ivory: #FFFEF5;
+            --cream-dark: #E8E0D0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+
+        /* Paper Texture Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 2rem;
+            background: linear-gradient(180deg, var(--bg) 0%, rgba(245,240,230,0.95) 100%);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            transition: all 0.4s ease;
+        }
+
+        header.scrolled {
+            padding: 0.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(107, 45, 61, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            background: linear-gradient(180deg, var(--ivory) 0%, var(--bg) 100%);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .hero-bg svg {
+            position: absolute;
+            opacity: 0.08;
+        }
+
+        .hero-bg .curve-1 {
+            top: -50%;
+            left: -20%;
+            width: 80%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .hero-bg .curve-2 {
+            bottom: -30%;
+            right: -20%;
+            width: 70%;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(30px, -30px) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .flourish {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.2s;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.4s;
+        }
+
+        .hero-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.6s;
+        }
+
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--ivory);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 30px rgba(107, 45, 61, 0.1);
+            border: 1px solid var(--cream-dark);
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.8s;
+        }
+
+        .rating-badge .stars {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+        }
+
+        .rating-badge .rating-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .rating-badge .review-count {
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 0.95rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 1s, bounce 2s ease-in-out infinite 1s;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        .scroll-indicator svg {
+            width: 30px;
+            height: 30px;
+            color: var(--secondary);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .section-divider .line {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+        }
+
+        .section-divider svg {
+            width: 24px;
+            height: 24px;
+            color: var(--secondary);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--ivory);
+            border-radius: 20px;
+            padding: 4rem;
+            position: relative;
+            box-shadow: 0 10px 60px rgba(107, 45, 61, 0.08);
+        }
+
+        .about::before,
+        .about::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0.15;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q25 25 50 50 T100 50' fill='none' stroke='%23C9A227' stroke-width='1'/%3E%3Cpath d='M0 60 Q30 40 60 60 T100 60' fill='none' stroke='%23C9A227' stroke-width='0.5'/%3E%3C/svg%3E");
+        }
+
+        .about::before {
+            top: -20px;
+            left: -20px;
+        }
+
+        .about::after {
+            bottom: -20px;
+            right: -20px;
+            transform: rotate(180deg);
+        }
+
+        .about p {
+            font-size: 1.25rem;
+            line-height: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            color: var(--secondary);
+        }
+
+        /* Features Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--ivory);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--cream-dark);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(107, 45, 61, 0.12);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card .icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card .icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--ivory);
+        }
+
+        .feature-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            color: var(--text);
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background: linear-gradient(180deg, var(--bg) 0%, var(--ivory) 50%, var(--bg) 100%);
+        }
+
+        .reviews-container {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            padding: 1rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .reviews-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .reviews-container::-webkit-scrollbar-track {
+            background: var(--cream-dark);
+            border-radius: 3px;
+        }
+
+        .reviews-container::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 3px;
+        }
+
+        .review-card {
+            min-width: 350px;
+            background: var(--ivory);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--cream-dark);
+            scroll-snap-align: start;
+            transition: transform 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: scale(1.02);
+        }
+
+        .review-card .quote-mark {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .review-card .review-text {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--text);
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        .review-card .stars {
+            color: var(--secondary);
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        /* Popular Times */
+        .times-section {
+            background: var(--ivory);
+            border-radius: 20px;
+            padding: 4rem;
+            margin: 4rem auto;
+        }
+
+        .times-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 2rem auto 0;
+        }
+
+        .time-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .time-row .day {
+            width: 50px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .time-row .bar-container {
+            flex: 1;
+            height: 30px;
+            background: var(--cream-dark);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .time-row .bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            border-radius: 15px;
+            width: 0;
+            transition: width 1s ease;
+        }
+
+        .time-row .bar.animated {
+            width: var(--width);
+        }
+
+        .time-row .time-label {
+            width: 100px;
+            font-size: 0.9rem;
+            color: var(--text);
+            opacity: 0.7;
+            text-align: right;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: var(--ivory);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--cream-dark);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            border-color: var(--secondary);
+        }
+
+        .contact-card .icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-card .icon svg {
+            width: 30px;
+            height: 30px;
+            color: var(--ivory);
+        }
+
+        .contact-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: var(--text);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: var(--secondary);
+        }
+
+        .hours-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--accent), #7A8960);
+            color: var(--ivory);
+            padding: 0.5rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            margin-top: 0.75rem;
+        }
+
+        .hours-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: #90EE90;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Map Link */
+        .map-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: var(--ivory);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .map-link:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(107, 45, 61, 0.2);
+        }
+
+        .map-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--ivory);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent), var(--secondary));
+        }
+
+        .footer-flourish {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        footer h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .footer-divider {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+            margin: 2rem auto;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: var(--ivory);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                transition: right 0.4s ease;
+                box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+                z-index: 101;
+            }
+
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .about {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .times-section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .review-card {
+                min-width: 280px;
+            }
+
+            .contact-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 32V12C8 10.9 8.9 10 10 10H18C19.1 10 20 10.9 20 12V32" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 32V8C20 6.9 20.9 6 22 6H30C31.1 6 32 6.9 32 8V32" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 12H20" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 8H32" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="14" cy="22" r="2" fill="currentColor"/>
+                    <circle cx="26" cy="20" r="2" fill="currentColor"/>
+                </svg>
+                The Campus Library
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Visit</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <svg class="curve-1" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 400C200 200 400 100 600 200C800 300 700 500 600 600C500 700 300 700 200 600C100 500 0 600 100 400Z" stroke="#C9A227" stroke-width="2" fill="none"/>
+                <path d="M150 400C250 250 450 150 650 250C850 350 750 550 650 650C550 750 350 750 250 650C150 550 50 650 150 400Z" stroke="#C9A227" stroke-width="1" fill="none"/>
+                <path d="M200 400C300 300 500 200 700 300C900 400 800 600 700 700C600 800 400 800 300 700C200 600 100 700 200 400Z" stroke="#C9A227" stroke-width="0.5" fill="none"/>
+            </svg>
+            <svg class="curve-2" width="700" height="700" viewBox="0 0 700 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 350C200 150 400 50 600 150C800 250 700 450 600 550C500 650 300 650 200 550C100 450 0 550 100 350Z" stroke="#6B2D3D" stroke-width="1.5" fill="none"/>
+                <path d="M150 350C250 200 450 100 650 200C850 300 750 500 650 600C550 700 350 700 250 600C150 500 50 600 150 350Z" stroke="#6B2D3D" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <p class="flourish">Welcome to</p>
+            <h1>The Campus Library</h1>
+            <p class="hero-tagline">A Sanctuary for Antiquarian Literature & Modern Scholarship</p>
+            <div class="rating-badge">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9</span>
+                <span class="review-count">(8 Google Reviews)</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-header">
+            <h2>About the Library</h2>
+            <div class="section-divider">
+                <span class="line"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L14 9H20L15 13L17 19L12 15L7 19L9 13L4 9H10L12 3Z"/>
+                </svg>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="about">
+            <p>Nestled in the heart of Burari, The Campus Library stands as a beacon of knowledge and tranquility. Our collection celebrates both rare antiquarian treasures and contemporary scholarly works, creating a unique space where classical literature meets modern learning.</p>
+            <p>The library's serene ambiance, combined with thoughtfully curated amenities, provides an ideal environment for deep study, research, and the simple pleasure of reading. Whether you seek ancient manuscripts or the latest academic publications, our doors are open to nurture your intellectual journey.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="reveal">
+        <div class="section-header">
+            <h2>Modern Amenities</h2>
+            <div class="section-divider">
+                <span class="line"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L14 9H20L15 13L17 19L12 15L7 19L9 13L4 9H10L12 3Z"/>
+                </svg>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+                <h3>Peaceful Environment</h3>
+                <p>A calm and inviting atmosphere perfect for focused study and reading</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Modern Amenities</h3>
+                <p>Equipped with contemporary facilities to enhance your study experience</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    </svg>
+                </div>
+                <h3>RO Purified Water</h3>
+                <p>Complimentary filtered drinking water available throughout</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                </div>
+                <h3>Flexible Hours</h3>
+                <p>Open 24 hours for your convenience, accommodating all schedules</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                </div>
+                <h3>Air Conditioned</h3>
+                <p>Climate-controlled environment for comfortable studying year-round</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                        <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                        <line x1="12" y1="20" x2="12.01" y2="20"/>
+                    </svg>
+                </div>
+                <h3>High-Speed WiFi</h3>
+                <p>Complimentary wireless internet for research and online resources</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews reveal">
+        <div class="section-header">
+            <h2>What Readers Say</h2>
+            <div class="section-divider">
+                <span class="line"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L14 9H20L15 13L17 19L12 15L7 19L9 13L4 9H10L12 3Z"/>
+                </svg>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="reviews-container">
+            <div class="review-card">
+                <span class="quote-mark">"</span>
+                <p class="review-text">Peaceful environment and equipped with modern amenities. A wonderful place to immerse yourself in literature.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <span class="quote-mark">"</span>
+                <p class="review-text">The ambiance is calm and inviting, making it a perfect place to read or study. Truly a hidden gem in Burari.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <span class="quote-mark">"</span>
+                <p class="review-text">RO water and timing is flexible. The staff is helpful and the collection is impressive.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-card">
+                <span class="quote-mark">"</span>
+                <p class="review-text">A beautiful space that fosters concentration and learning. Highly recommended for students and book lovers alike.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Times Section -->
+    <section class="times-section reveal">
+        <div class="section-header">
+            <h2>Popular Times</h2>
+            <div class="section-divider">
+                <span class="line"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L14 9H20L15 13L17 19L12 15L7 19L9 13L4 9H10L12 3Z"/>
+                </svg>
+                <span class="line"></span>
+            </div>
+        </div>
+        <p style="text-align: center; opacity: 0.8; max-width: 500px; margin: 0 auto;">Busiest time typically around 6 PM on weekdays. Early mornings and late evenings offer quieter study spaces.</p>
+        <div class="times-chart">
+            <div class="time-row">
+                <span class="day">Mon</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 85%;"></div>
+                </div>
+                <span class="time-label">6 PM Peak</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Tue</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 75%;"></div>
+                </div>
+                <span class="time-label">5-7 PM</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Wed</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 80%;"></div>
+                </div>
+                <span class="time-label">6 PM Peak</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Thu</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 70%;"></div>
+                </div>
+                <span class="time-label">5-7 PM</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Fri</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 60%;"></div>
+                </div>
+                <span class="time-label">4-6 PM</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Sat</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 55%;"></div>
+                </div>
+                <span class="time-label">11 AM-1 PM</span>
+            </div>
+            <div class="time-row">
+                <span class="day">Sun</span>
+                <div class="bar-container">
+                    <div class="bar" style="--width: 45%;"></div>
+                </div>
+                <span class="time-label">10 AM-12 PM</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-header">
+            <h2>Visit Us</h2>
+            <div class="section-divider">
+                <span class="line"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L14 9H20L15 13L17 19L12 15L7 19L9 13L4 9H10L12 3Z"/>
+                </svg>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <h3>Location</h3>
+                <p>2nd floor, 100 Feet Rd<br>Opposite Guru Gobind Singh Hospital<br>Block B, Sant Nagar, Burari<br>Delhi - 110084</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </div>
+                <h3>Phone</h3>
+                <p><a href="tel:09315994676">093159 94676</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                </div>
+                <h3>Hours</h3>
+                <p>Open 24 Hours</p>
+                <div class="hours-badge">
+                    <span class="dot"></span>
+                    Currently Open
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="https://share.google/mgLZYfHgFkkHkflNp" target="_blank" class="map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="3,11 22,2 13,21 11,13 3,11"/>
+                </svg>
+                View on Google Maps
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-flourish">Thank you for visiting</p>
+        <h3>The Campus Library</h3>
+        <p>Where classical beauty meets modern scholarship</p>
+        <div class="footer-divider"></div>
+        <p class="copyright">© 2026 The Campus Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+
+            // Animate popular times bars
+            const bars = document.querySelectorAll('.time-row .bar');
+            bars.forEach(bar => {
+                const barTop = bar.getBoundingClientRect().top;
+                if (barTop < window.innerHeight - 50) {
+                    bar.classList.add('animated');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
